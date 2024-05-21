@@ -15,4 +15,20 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
                 value="oracle.jdbc.OracleDriver" />
     </properties>
   </persistence-unit>
+  <persistence-unit name="plant" transaction-type="RESOURCE_LOCAL">
+    <class>com.JPAmanual.capitulo3.entidad.Compatible</class>
+    <class>com.JPAmanual.capitulo3.entidad.Location</class>
+    <class>com.JPAmanual.capitulo3.entidad.Bush</class>
+    <class>com.JPAmanual.capitulo3.entidad.Flora</class>
+    <class>com.JPAmanual.capitulo3.entidad.Tree</class>
+    <class>com.JPAmanual.capitulo3.entidad.Properties</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url"
+                value="jdbc:oracle:thin:@localhost:1521:orcl" />
+      <property name="javax.persistence.jdbc.user" value="hr" />
+      <property name="javax.persistence.jdbc.password" value="hr" />
+      <property name="javax.persistence.jdbc.driver"
+                value="oracle.jdbc.OracleDriver" />
+    </properties>
+  </persistence-unit>
 </persistence>
