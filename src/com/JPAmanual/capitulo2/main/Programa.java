@@ -1,7 +1,7 @@
-package com.JPAmanual.main;
+package com.JPAmanual.capitulo2.main;
 
-import com.JPAmanual.entidad.Animal;
-import com.JPAmanual.servicios.ServicioAnimal;
+import com.JPAmanual.capitulo2.entidad.Animal;
+import com.JPAmanual.capitulo2.servicios.ServicioAnimal;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

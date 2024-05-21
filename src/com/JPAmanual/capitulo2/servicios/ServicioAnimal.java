@@ -1,6 +1,6 @@
-package com.JPAmanual.servicios;
+package com.JPAmanual.capitulo2.servicios;
 
-import com.JPAmanual.entidad.Animal;
+import com.JPAmanual.capitulo2.entidad.Animal;
 
 import javax.persistence.EntityManager;
 import java.util.ArrayList;

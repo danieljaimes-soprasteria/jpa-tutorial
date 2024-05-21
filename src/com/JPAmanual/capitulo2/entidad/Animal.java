@@ -1,4 +1,4 @@
-package com.JPAmanual.entidad;
+package com.JPAmanual.capitulo2.entidad;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
