@@ -9,8 +9,8 @@ import java.util.List;
 public class ServicioAnimal {
     // Persist
     public static Animal crearAnimal(EntityManager em, String id, String nombre,
-                                     String clase, String hábitat) {
-        Animal a = new Animal(id, nombre, clase, hábitat);
+                                     String clase, String habitat) {
+        Animal a = new Animal(id, nombre, clase, habitat);
         em.persist(a);
         return a;
     }
@@ -32,12 +32,12 @@ public class ServicioAnimal {
 
     // Update Animal
     public static Animal modificarAnimal(EntityManager em, String id, String nombre,
-                                         String clase, String hábitat) {
+                                         String clase, String habitat) {
         Animal a = em.find(Animal.class, id);
         if (a != null) {
             a.setNombre(nombre);
             a.setClase(clase);
-            a.setHabitat(hábitat);
+            a.setHabitat(habitat);
         }
         return a;
     }
